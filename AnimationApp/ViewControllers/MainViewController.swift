@@ -8,16 +8,16 @@
 import Spring
 
 class MainViewController: UIViewController {
-    //MARK: - IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet var animationPropertiesView: SpringView!
     @IBOutlet var animationPropertiesLabel: UILabel!
 
     @IBOutlet var runAnimationButton: UIButton!
 
-    //MARK: - Private Properties
+    // MARK: - Private Properties
     private var animation = Animation.getAnimation()
 
-    //MARK: - Life Cycles Methods
+    // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
         setupRunButton()
     }
 
-    //MARK: - IB Actions
+    // MARK: - IB Actions
     @IBAction func runAnimation() {
         setupPropertiesView()
         animationPropertiesView.animate()
@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
     }
 }
 
-//MARK: - Private Methods
+// MARK: - Private Methods
 extension MainViewController {
     private func setupPropertiesLabel() {
         animationPropertiesLabel.text = animation.description

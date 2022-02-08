@@ -5,7 +5,7 @@
 //  Created by Alexander on 08.02.2022.
 //
 
-struct Animation {    
+struct Animation {
     let preset: String
     let curve: String
     let force: Double
@@ -17,8 +17,8 @@ struct Animation {
         preset: \(preset)
         curve: \(curve)
         force: \(String(format: "%.1f", force))
-        duration: \(String(format: "%.1f",duration))
-        delay: \(String(format: "%.1f",delay))
+        duration: \(String(format: "%.1f", duration))
+        delay: \(String(format: "%.1f", delay))
         """
     }
 
